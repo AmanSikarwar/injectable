@@ -72,7 +72,7 @@ class InjectableInit {
   /// feature flag to activate a 'constructor callback'.
   /// Setting this to 'true' will generate an additional parameter
   /// to '$initGetIt' - named "constructorCallback" - a function of signature
-  /// "T constructorCallback<T>(T)".
+  /// "T Function&lt;T&gt;(T)" or "T Function(T)"
   /// Injectable will pass all injectable objects to this delegate at the
   /// time of their constructor/module-method invocation.
   /// defaults to false
